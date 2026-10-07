@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4C2FC"/>
+      <stop offset="100%" stop-color="#998FC7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Круг с градиентом от светло-сиреневого к приглушённому сиреневому -->
+  <circle cx="50" cy="50" r="48" fill="url(#grad)"
+          stroke="#14248A" stroke-width="2"/>
+
+  <!-- Инициалы — тёмный Onyx -->
+  <text x="50" y="48" font-family="Arial, sans-serif" font-size="30"
+        fill="#141316" text-anchor="middle" font-weight="bold">ИУ</text>
+
+  <!-- Группа — тёмный Onyx -->
+  <text x="50" y="74" font-family="Arial, sans-serif" font-size="13"
+        fill="#141316" text-anchor="middle" letter-spacing="1">ИСТ-37</text>
+</svg>

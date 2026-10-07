@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #141316;
+    background: #F9F5FF;
+}
+
+/* Шапка */
+
+header {
+    padding: 20px;
+    background: #141316;
+    color: white;
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.profile div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.profile small {
+    color: #D4C2FC;
+    margin-top: 4px;
+}
+
+/* Верхнее меню */
+
+.top-nav {
+    margin-top: 18px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #998FC7;
+    font-size: 13px;
+    margin: 0 10px;
+}
+
+.top-nav a:hover {
+    color: #D4C2FC;
+}
+
+/* Основная часть */
+
+.page {
+    display: flex;
+    min-height: 500px;
+}
+
+/* Левое меню */
+
+.side-nav {
+    width: 260px;
+    padding: 25px;
+    background: #D4C2FC;
+    border-right: 1px solid #998FC7;
+}
+
+.side-nav .profile {
+    margin-bottom: 30px;
+}
+
+.side-nav a,
+.side-nav > b {
+    display: block;
+    margin: 20px 0;
+}
+
+.side-nav a {
+    color: #141316;
+    text-decoration: none;
+}
+
+.side-nav a:hover {
+    color: #14248A;
+}
+
+/* Центральная часть */
+
+main {
+    flex: 1;
+    padding: 50px;
+    background: #F9F5FF;
+}
+
+main h1 {
+    margin-top: 0;
+    color: #14248A;
+}
+
+main h2 {
+    color: #998FC7;
+}
+
+main p {
+    color: #141316;
+    line-height: 1.6;
+}
+
+/* Блок информации */
+
+section {
+    margin-top: 30px;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 15px #D4C2FC;
+    max-width: 650px;
+}
+
+section h3 {
+    color: #141316;
+}
+
+/* Подвал */
+
+footer {
+    padding: 35px 50px 20px;
+    background: #141316;
+    color: white;
+}
+
+.footer-profile {
+    margin-bottom: 30px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-bottom: 1px solid #998FC7;
+}
+
+.contacts span {
+    color: #D4C2FC;
+    font-size: 12px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    color: #998FC7;
+    font-size: 11px;
+}
+
+/* Для маленького экрана */
+
+@media (max-width: 700px) {
+
+    .page {
+        display: block;
+    }
+
+    .side-nav {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid #998FC7;
+    }
+
+    .contacts {
+        display: block;
+    }
+
+    .contacts div {
+        margin: 15px 0;
+    }
+
+    .bottom {
+        display: block;
+    }
+
+    .bottom span {
+        display: block;
+        margin: 10px 0;
+    }
+}
