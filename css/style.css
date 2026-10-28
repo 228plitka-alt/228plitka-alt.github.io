@@ -1,0 +1,49 @@
+/* Шрифт */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Активный пункт меню */
+.navbar-nav .nav-link.active {
+    color: #0d6efd !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    color: #555;
+    padding: 0.5rem 1rem;
+}
+
+/* Вертикальная линия времени (Timeline) */
+.timeline {
+    border-left: 2px solid #e9ecef;
+    margin-left: 10px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -6px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+/* Эффект для карточек проектов */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+/* Оформление бейджей-технологий */
+.badge.bg-light {
+    font-weight: 500;
+    padding: 0.4em 0.8em;
+    margin-right: 5px;
+}
